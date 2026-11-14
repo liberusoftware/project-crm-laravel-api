@@ -1,0 +1,22 @@
+{
+    "name": "liberusoftware/module-crm-prospecting",
+    "type": "liberu-module",
+    "autoload": {
+        "psr-4": {
+            "Liberu\\CRM\\Prospecting\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liberu\\CRM\\Prospecting\\ProspectingServiceProvider"
+            ]
+        },
+        "liberu": {
+            "name": "crm-prospecting"
+        }
+    },
+    "description": "Ideal customer profiles, prospect research, contact credits and compliant handoff",
+    "license": "MIT",
+    "version": "v1.0.0"
+}

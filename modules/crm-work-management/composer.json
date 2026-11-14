@@ -1,0 +1,27 @@
+{
+    "name": "liberusoftware/module-crm-work-management",
+    "description": "CRM work management domain module",
+    "type": "liberu-module",
+    "require": {
+        "php": "^8.5",
+        "illuminate/database": "^13.38.0",
+        "liberusoftware/module-manager": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liberu\\CRM\\WorkManagement\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liberu\\CRM\\WorkManagement\\WorkManagementServiceProvider"
+            ]
+        },
+        "liberu": {
+            "name": "crm-work-management"
+        }
+    },
+    "license": "MIT",
+    "version": "v1.0.0"
+}

@@ -1,0 +1,22 @@
+{
+    "name": "liberusoftware/module-crm-journey-orchestration",
+    "type": "liberu-module",
+    "autoload": {
+        "psr-4": {
+            "Liberu\\CRM\\JourneyOrchestration\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liberu\\CRM\\JourneyOrchestration\\JourneyOrchestrationServiceProvider"
+            ]
+        },
+        "liberu": {
+            "name": "crm-journey-orchestration"
+        }
+    },
+    "description": "Triggered and scheduled journeys with branching, controls, experiments and publication",
+    "license": "MIT",
+    "version": "v1.0.0"
+}

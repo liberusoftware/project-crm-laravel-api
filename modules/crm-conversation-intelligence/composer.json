@@ -1,0 +1,22 @@
+{
+    "name": "liberusoftware/module-crm-conversation-intelligence",
+    "type": "liberu-module",
+    "autoload": {
+        "psr-4": {
+            "Liberu\\CRM\\ConversationIntelligence\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liberu\\CRM\\ConversationIntelligence\\ConversationIntelligenceServiceProvider"
+            ]
+        },
+        "liberu": {
+            "name": "crm-conversation-intelligence"
+        }
+    },
+    "description": "Recording, transcription, evidence and conversation insights",
+    "license": "MIT",
+    "version": "v1.1.0"
+}

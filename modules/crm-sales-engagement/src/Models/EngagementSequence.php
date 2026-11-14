@@ -1,0 +1,26 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Liberu\CRM\SalesEngagement\Models;
+
+use App\Traits\IsTenantModel;
+use Illuminate\Database\Eloquent\Model;
+
+/**
+ * @property int $team_id
+ * @property string $status
+ */
+final class EngagementSequence extends Model
+{
+    use IsTenantModel;
+
+    protected $table = 'crm_engagement_sequences';
+
+    protected $guarded = [];
+
+    protected function casts(): array
+    {
+        return ['throttle' => 'array', 'stop_rules' => 'array', 'experiment' => 'array'];
+    }
+}

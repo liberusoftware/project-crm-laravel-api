@@ -1,0 +1,25 @@
+{
+    "name": "liberusoftware/module-crm-quotas-and-incentives-api",
+    "type": "liberu-module",
+    "require": {
+        "liberusoftware/module-crm-quotas-and-incentives": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liberu\\CRM\\QuotasAndIncentivesApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liberu\\CRM\\QuotasAndIncentivesApi\\Providers\\QuotasAndIncentivesApiServiceProvider"
+            ]
+        },
+        "liberu": {
+            "name": "crm-quotas-and-incentives-api"
+        }
+    },
+    "description": "Quotas and commission API",
+    "license": "MIT",
+    "version": "v1.1.0"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "liberusoftware/module-crm-reputation-management-api",
+    "type": "liberu-module",
+    "require": {
+        "liberusoftware/module-crm-reputation-management": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liberu\\CRM\\ReputationManagementApi\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liberu\\CRM\\ReputationManagementApi\\Providers\\ReputationManagementApiServiceProvider"
+            ]
+        },
+        "liberu": {
+            "name": "crm-reputation-management-api"
+        }
+    },
+    "description": "Reputation management API",
+    "license": "MIT",
+    "version": "v1.1.0"
+}

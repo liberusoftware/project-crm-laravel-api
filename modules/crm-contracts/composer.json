@@ -1,0 +1,22 @@
+{
+    "name": "liberusoftware/module-crm-contracts",
+    "type": "liberu-module",
+    "autoload": {
+        "psr-4": {
+            "Liberu\\CRM\\Contracts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Liberu\\CRM\\Contracts\\ContractsServiceProvider"
+            ]
+        },
+        "liberu": {
+            "name": "crm-contracts"
+        }
+    },
+    "description": "Contract terms, obligations, approvals, signatures and renewals",
+    "license": "MIT",
+    "version": "v1.1.0"
+}
